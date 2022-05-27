@@ -57,13 +57,60 @@
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
                 <button type="button" class="hero-btn" data-modal-open>Заказать услугу</button>
             </div>
-            <div class="backdrop is-hidden" data-modal>
+            <div class="is-hidden backdrop" data-modal>
                 <div class="modal">
                     <button type="button" class="btn-close" data-modal-close>
                         <svg class="icon-close">
                             <use href="./images/icons.svg#icon-close"></use>
                         </svg>
                     </button>
+                    <div class="div-box">
+                        <b class="modal-title-form">Оставьте свои данные, мы вам перезвоним</b>
+                        <form class="form-user-data" action="">
+                            <label class="form-label-group"><span class="form-modal-lable">Имя</span>
+                                <input class="form-input" type="text" name="user-name" minlength="3" placeholder=" "
+                                    required />
+                                <svg class="modal-form-svg" width="18px" height="18px">
+                                    <use href="./images/icons.svg#icon-person-black"></use>
+                                </svg>
+                            </label>
+
+                            <label class="form-label-group"><span class="form-modal-lable">Телефон</span>
+                                <input class="form-input" type="phone" name="user-phone" placeholder=" " required />
+                                <svg class="modal-form-svg" width="18px" height="18px">
+                                    <use href="./images/icons.svg#icon-phone-black"></use>
+                                </svg>
+                            </label>
+
+                            <label class="form-label-group"><span class="form-modal-lable">Почта</span>
+                                <input class="form-input" type="email" name="user-mail" placeholder=" " required />
+                                <svg class="modal-form-svg" width="18px" height="18px">
+                                    <use href="./images/icons.svg#icon-email-black"></use>
+                                </svg>
+                            </label>
+
+                            <label class="form-comment-group">
+                                <span class="form-modal-lable">Комментарий</span>
+                                <textarea class="form-message" name="user-message" cols="30" rows="10"
+                                    placeholder="Введите текст"></textarea>
+                            </label>
+                            <label class="form-policy-group">
+                                <input class="checkbox visually-hidden" type="checkbox" tabindex="-1" id="chk1-label" />
+                                <span class="custom-checkbox" tabindex="0" role="checkbox" aria-checked="false"
+                                    aria-labelledby="chk1-label">
+                                    <svg class="custom-checkbox-icon" width="16" height="15">
+                                        <use href="./images/icons.svg#icon-check"></use>
+                                    </svg>
+
+                                </span>
+
+                                <span class="form-policy-desc">Соглашаюсь с рассылкой и принимаю
+                                    <a class="form-policy-link" href="">Условия договора</a>
+                                </span>
+                            </label>
+                            <button class="form-send-btn" type="submit">Отправить</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
@@ -364,7 +411,7 @@
                 </address>
             </div>
 
-            <div>
+            <div class="social-div">
                 <h3 class="social-title">присоединяйтесь</h3>
                 <ul class="social-list list">
                     <li class="social-item">
@@ -396,6 +443,19 @@
                         </a>
                     </li>
                 </ul>
+            </div>
+            <div>
+                <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
+                <form class="form-sub">
+                    <label><input class="subscribe-input" type="email" name="mail" placeholder="E-mail"
+                            required /></label>
+                    <button class="subscribe-btn" type="submit">
+                        Подписаться
+                        <svg class="subscribe-svg" width="24px" height="24px">
+                            <use href="./images/icons.svg#icon-icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
             </div>
         </div>
     </footer>
