@@ -66,7 +66,7 @@
                     </button>
                     <div class="div-box">
                         <b class="modal-title-form">Оставьте свои данные, мы вам перезвоним</b>
-                        <form class="form-user-data" action="">
+                        <form class="form-user-data">
                             <label class="form-label-group"><span class="form-modal-lable">Имя</span>
                                 <input class="form-input" type="text" name="user-name" minlength="3" placeholder=" "
                                     required />
@@ -76,7 +76,7 @@
                             </label>
 
                             <label class="form-label-group"><span class="form-modal-lable">Телефон</span>
-                                <input class="form-input" type="phone" name="user-phone" placeholder=" " required />
+                                <input class="form-input" type="tel" name="user-phone" required />
                                 <svg class="modal-form-svg" width="18px" height="18px">
                                     <use href="./images/icons.svg#icon-phone-black"></use>
                                 </svg>
@@ -91,7 +91,7 @@
 
                             <label class="form-comment-group">
                                 <span class="form-modal-lable">Комментарий</span>
-                                <textarea class="form-message" name="user-message" cols="30" rows="10"
+                                <textarea class="form-message" name="user-message" cols="30" rows="6"
                                     placeholder="Введите текст"></textarea>
                             </label>
                             <label class="form-policy-group">
@@ -447,8 +447,7 @@
             <div>
                 <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
                 <form class="form-sub">
-                    <label><input class="subscribe-input" type="email" name="mail" placeholder="E-mail"
-                            required /></label>
+                    <input class="subscribe-input" type="email" name="mail" placeholder="E-mail" required />
                     <button class="subscribe-btn" type="submit">
                         Подписаться
                         <svg class="subscribe-svg" width="24px" height="24px">
